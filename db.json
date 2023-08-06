@@ -1,0 +1,28 @@
+{
+   "heros" : [
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "city": "New York"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 25,
+        "city": "London"
+      },
+      {
+        "id": 3,
+        "name": "Michael Johnson",
+        "age": 40,
+        "city": "Los Angeles"
+      },
+      {
+        "id": 4,
+        "name": "Emily Brown",
+        "age": 35,
+        "city": "Sydney"
+      }
+   ]
+}
