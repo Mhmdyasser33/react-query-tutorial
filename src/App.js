@@ -4,10 +4,15 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import SuperHero from './components/SuperHero/SuperHero';
 import RqSuperHero from './components/RQsuperHero/RqSuperHero';
+import {QueryClientProvider , QueryClient} from 'react-query'
+import {ReactQueryDevtools} from 'react-query-devtools'
 
 function App() {
+  // take a reference from queryClient
+    const queryClient = new QueryClient() ;
   return (
     <div className="App">
+      <QueryClientProvider client={queryClient}>
        <Router>
             <Navbar/>
             <Routes>
@@ -16,6 +21,7 @@ function App() {
                 <Route path='/heros' element={<RqSuperHero/>}/>
             </Routes>
         </Router>
+      </QueryClientProvider>
     </div>
   );
 }
