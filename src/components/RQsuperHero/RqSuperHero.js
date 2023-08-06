@@ -33,7 +33,14 @@ const RqSuperHero = () => {
     return axios.get("http://localhost:4000/heros")
     .then((res) => res.data) ;
   }
-  const {isLoading , data , isError,  error}  = useQuery('heros' , fetched_data) ;
+  const {isLoading , data , isError,  error , isFetching}  = useQuery('heros' , fetched_data , {
+    // default time is 5000
+   /*  cacheTime : 5000 , */
+    staleTime : 30000,
+  }) ;
+  console.log('====================================');
+  console.log("loading :  " + isLoading , "Fetched : " + isFetching);
+  console.log('====================================');
   if(isLoading){
   return <div style={loadingStyle}>Loading...</div>
   }
@@ -44,7 +51,7 @@ const RqSuperHero = () => {
     <div>
      <h1 style={titleStyle}> Heros </h1>
      {data ? data.map((hero) =>(
-       <div  style={heroItemStyle}key={hero.id}>{hero.name}</div>
+       <div  style={heroItemStyle}key={hero.id}> {hero.name}</div>
      )) : "there is no hero"}
     </div>
   )

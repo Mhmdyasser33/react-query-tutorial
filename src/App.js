@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import SuperHero from './components/SuperHero/SuperHero';
 import RqSuperHero from './components/RQsuperHero/RqSuperHero';
 import {QueryClientProvider , QueryClient} from 'react-query'
-import {ReactQueryDevtools} from 'react-query-devtools'
+import {ReactQueryDevtools} from 'react-query/devtools'
 
 function App() {
   // take a reference from queryClient
@@ -21,6 +21,8 @@ function App() {
                 <Route path='/heros' element={<RqSuperHero/>}/>
             </Routes>
         </Router>
+        {/* this make devtools panel in initial is closed , and this is position that will appear in it  */}
+        <ReactQueryDevtools initialIsOpen={true} position='bottom-right'/>
       </QueryClientProvider>
     </div>
   );
