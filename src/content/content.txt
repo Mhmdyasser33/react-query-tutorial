@@ -1,0 +1,8 @@
+1 - setup react app
+2 - using react query to fetch data
+3 - Query cache
+4 - difference between cacheTime and StaleTime
+5 - refetch
+6 - polling
+7 - userQuery onClick || refetch data manually
+

@@ -1,0 +1,25 @@
+1 - react query : React Query is a JavaScript library
+that helps you manage data fetching, caching,
+ synchronization, and state management in your React applications .
+
+2 - cacheTime : it refers to the amount of time for which fetched data is stored and kept in the cache.
+ * It specifies how long the fetched data will be available in the cache before it's considered stale.
+
+3 - StaleTime : Stale time  it refers to the duration after which cached data is considered "stale," regardless of when the last fetch occurred.Stale time refers to the duration after which cached data is considered "stale," regardless of when the last fetch occurred.
+ * It represents the maximum amount of time that can elapse before cached data is no longer considered up-to-date.
+
+4 - Refetching : it means requesting new or updated data from a server or source .
+* refetchOnMount has three value
+- true   this is default value and in it will refetch data
+- false is a values in it we did not refetch the data
+- 'always' : value in it will at any ways we refetch the data regardless the data is stale or not .
+
+* refetchOnWindowFocus : it have the same value but it differ in some things
+ - it refetch the data when you focus on the tap , example if you have database file with data and you change in data and return to the tap you did not need to press reload page to see the refetch data no but when you focus on tap
+ automatically the refetch will done.
+ it have three values like previous and they do same job.
+
+ polling : iss like asking a question repeatedly to check if there's a new answer.
+  In software, it's when a program keeps checking a source,
+   like a website, at regular times to see if there's any new or updated information
+
