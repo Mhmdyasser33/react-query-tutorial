@@ -2,6 +2,14 @@ import React from 'react'
 import {useQuery} from 'react-query'
 import axios from 'axios'
 const RqSuperHero = () => {
+
+  const onSuccess = (date) =>{
+      console.log('Data fetched successfully:' , date);
+  }
+
+  const onError = (error) =>{
+      console.log('Error fetching data' , error);
+  }
   const loadingStyle = {
     fontSize: '18px',
     fontStyle: 'italic',
@@ -52,6 +60,11 @@ const RqSuperHero = () => {
      /*refetchIntervalInBackground : 60000,*/
      // prevent refetching the data
      enabled : false ,
+   /*   onSuccess : onSuccess ,
+     onError : onError ,  ===   onSuccess,
+     onError,*/
+     onSuccess,
+     onError ,
   }) ;
   console.log('====================================');
   console.log("loading :  " + isLoading , "Fetched : " + isFetching);
@@ -70,6 +83,7 @@ const RqSuperHero = () => {
        <div  style={heroItemStyle}key={hero.id}> {hero.name}</div>
        )) : "there is no data "}
     </div>
+
     {/* handle refetch data but manually  */}
     <button onClick={() => refetch()} style={btnStyle } disabled={data}>Fetch data </button>
     </>
