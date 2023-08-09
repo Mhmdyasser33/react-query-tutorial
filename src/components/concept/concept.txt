@@ -23,3 +23,5 @@ that helps you manage data fetching, caching,
   In software, it's when a program keeps checking a source,
    like a website, at regular times to see if there's any new or updated information
 
+5 - data transformation : is process of modifying or manipulating data that is being
+ fetched from an API or a data source before it's stored in the React Query cache.
