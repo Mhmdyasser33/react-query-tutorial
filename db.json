@@ -24,5 +24,34 @@
         "age": 35,
         "city": "Sydney"
       }
+   ] ,
+
+   "friends" : [
+    {
+     "id" : 1 ,
+     "name" : "mohamed"
+    } ,
+    {
+      "id" : 2 ,
+      "name" : "ahmed"
+     } ,
+     {
+      "id" : 3 ,
+      "name" : "kareem"
+     } ,
+     {
+      "id" : 4 ,
+      "name" : "youseef"
+     } ,
+     {
+      "id" : 5 ,
+      "name" : "Mostafa"
+     } ,
+     {
+      "id" : 6 ,
+      "name" : "samir"
+     }
    ]
+
+
 }

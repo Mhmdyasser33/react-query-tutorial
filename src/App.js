@@ -6,6 +6,8 @@ import SuperHero from './components/SuperHero/SuperHero';
 import RqSuperHero from './components/RQsuperHero/RqSuperHero';
 import {QueryClientProvider , QueryClient} from 'react-query'
 import {ReactQueryDevtools} from 'react-query/devtools'
+import RqWithUniqueID from './components/RqWithUniqueID'
+import ParallelQueries from './components/ParallelQueries';
 
 function App() {
   // take a reference from queryClient
@@ -16,6 +18,9 @@ function App() {
        <Router>
             <Navbar/>
             <Routes>
+              <Route path='rq-parallel-queries' element={<ParallelQueries/>}/>
+              {/* note..! :parameter-name this mean that it will be dynamic */}
+              <Route path='/rq-super-hero/:heroId' element={<RqWithUniqueID/>}/>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/superheros' element={<SuperHero/>}/>
                 <Route path='/heros' element={<RqSuperHero/>}/>

@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const CustomHook = (onSuccess , onError) => {
     const fetched_data = async () =>{
-        return axios.get("http://localhost:4000/heros??")
+        return axios.get("http://localhost:4000/heros")
         .then((res) => res.data) ;
       }
    return  useQuery('heros' , fetched_data , {
@@ -24,7 +24,7 @@ const CustomHook = (onSuccess , onError) => {
         // this is used to select heroName fetched from api
         select: (data) =>{
           if(data){
-        const heroName = data.map((hero) => hero.name) ;
+        const heroName = data.map((hero) => hero) ;
         return heroName ;
         }
         //this part include how to use filtration in data transformation

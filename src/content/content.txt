@@ -8,4 +8,6 @@
 8 - success and error callback
 9 - data transformation
 10 - query custom Hook
+11 - query by id
+12 - parallel queries
 
