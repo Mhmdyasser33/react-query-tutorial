@@ -10,4 +10,8 @@
 10 - query custom Hook
 11 - query by id
 12 - parallel queries
+13 - dynamic parallel queries
+14 - dependant query
+
+
 

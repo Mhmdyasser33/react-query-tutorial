@@ -51,7 +51,19 @@
       "id" : 6 ,
       "name" : "samir"
      }
-   ]
+   ] ,
+    "users" :[
+      {
+       "id" : "my1326545@gmail.com" ,
+       "channelID": "mohamed"
+      }
+    ] ,
+    "channels" : [
+      {
+         "id" : "mohamed" ,
+         "courses" : ["html" , "css" , "js" , "bootstrap" , "tailwind" , "typeScript" , "React" , "redux-toolkit" , "next-js"]
+      }
+    ]
 
 
 }

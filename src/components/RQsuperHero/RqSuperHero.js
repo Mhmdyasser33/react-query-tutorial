@@ -15,6 +15,7 @@
         fontStyle: 'italic',
         margin: '1rem',
         fontWeight : 'bold'
+
       };
 
       const errorStyle = {

@@ -25,3 +25,7 @@ that helps you manage data fetching, caching,
 
 5 - data transformation : is process of modifying or manipulating data that is being
  fetched from an API or a data source before it's stored in the React Query cache.
+
+6 - dependant query : refer to a feature that allows you to perform
+queries whose parameters or behavior are influenced by the result of
+ another query.
